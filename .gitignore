@@ -1,0 +1,46 @@
+# .gitignore for Bigdata Deepfake Hunter
+
+# Dataset - quá lớn, không upload lên git
+dataset/
+
+# Output files - generated during processing
+scripts/output/
+
+# Docker volumes và temp files
+spark-spill-master/
+spark-spill-worker/
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+*.egg-info/
+dist/
+build/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Reports (generated)
+report.html
+*.html
+
+# Backup
+*_OLD*
+*.bak
